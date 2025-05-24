@@ -40,13 +40,22 @@ header {
     gap: 1.5rem;
 }
 
-.profile-photo img {
-    width: 300px;
-    height: 300px;
+.profile-photo-large {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+.profile-photo-large img {
+    width: 450px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 60vw;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--border);
+    border: 3px solid var(--border);
     background: #f4f4f4;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
 }
 
 header h1 {
