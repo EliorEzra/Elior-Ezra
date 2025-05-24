@@ -2,10 +2,11 @@
     --primary: #222;
     --accent: #0078d7;
     --bg: #fff;
-    --text: #333;
+    --text: #222;
     --border: #eaeaea;
-    --radius: 8px;
-    --font: 'Segoe UI', Arial, sans-serif;
+    --radius: 10px;
+    --font: 'Segoe UI', 'Inter', Arial, sans-serif;
+    --shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
 }
 
 * {
@@ -17,7 +18,7 @@ body {
     font-family: var(--font);
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
@@ -52,6 +53,8 @@ header h1 {
     font-size: 2.2rem;
     font-weight: 700;
     margin: 0;
+    color: var(--primary);
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -67,24 +70,33 @@ nav a {
     color: var(--primary);
     font-weight: 500;
     transition: color 0.2s;
+    padding: 0.25em 0.5em;
+    border-radius: 5px;
 }
 
 nav a:hover {
     color: var(--accent);
+    background: #f3f8fd;
 }
 
 main {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 section {
     margin-bottom: 2.5rem;
+    padding: 2rem 1.5rem;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.03);
 }
 
 h2 {
     font-size: 1.4rem;
     margin-bottom: 0.7rem;
-    color: var(--primary);
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 h3 {
@@ -92,6 +104,7 @@ h3 {
     margin-top: 1.2rem;
     margin-bottom: 0.5rem;
     color: var(--accent);
+    font-weight: 500;
 }
 
 .resume-link {
@@ -104,6 +117,7 @@ h3 {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.2s;
+    box-shadow: var(--shadow);
 }
 
 .resume-link:hover {
@@ -113,12 +127,27 @@ h3 {
 .projects-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .projects-list li {
     margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border);
+    padding: 1.2rem 1rem;
+    border-radius: var(--radius);
+    background: #fff;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    transition: box-shadow 0.2s;
+}
+
+.projects-list li:hover {
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+}
+
+.projects-list a {
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 500;
 }
 
 .skills-list,
@@ -154,6 +183,7 @@ footer {
     font-size: 0.95rem;
     color: #888;
     background: var(--bg);
+    margin-top: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -167,5 +197,8 @@ footer {
     }
     main {
         padding: 1rem 0;
+    }
+    section {
+        padding: 1.2rem 0.7rem;
     }
 }
