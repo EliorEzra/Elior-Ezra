@@ -1,3 +1,2 @@
 # Elior-Ezra
-my personal wbsite: [[https://github.com/EliorEzra/personal-website](https://eliorezra.github.io/personal-website/)
-](https://eliorezra.github.io/Elior-Ezra/)
+my personal wbsite: https://eliorezra.github.io/Elior-Ezra/
