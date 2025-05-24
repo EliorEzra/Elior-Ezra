@@ -1,0 +1,171 @@
+:root {
+    --primary: #222;
+    --accent: #0078d7;
+    --bg: #fff;
+    --text: #333;
+    --border: #eaeaea;
+    --radius: 8px;
+    --font: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+header {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    background: #f4f4f4;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    color: var(--primary);
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+}
+
+.resume-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5em 1em;
+    background: var(--accent);
+    color: #fff;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.resume-link:hover {
+    background: #005fa3;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.skills-list,
+.contact-list,
+.languages ul,
+.education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.skills-list li,
+.contact-list li,
+.languages ul li,
+.education ul li {
+    margin-bottom: 0.5rem;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+}
+
+.exp-date {
+    color: #888;
+    font-size: 0.95em;
+    margin-left: 0.5em;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #888;
+    background: var(--bg);
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    main {
+        padding: 1rem 0;
+    }
+}
