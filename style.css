@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    background: var(--bg);
+    background: #003366;
     border-bottom: 1px solid var(--border);
     padding-top: 2rem;
     padding-bottom: 1rem;
