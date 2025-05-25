@@ -184,6 +184,50 @@ h3 {
     font-size: 0.95em;
     margin-left: 0.5em;
 }
+.connect-section {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.03);
+    padding: 2rem 1.5rem;
+}
+
+.connect-section h2 {
+    color: var(--accent);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.connect-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f3f8fd;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.03);
+}
+
+.icon-link:hover {
+    background: #e6f0fa;
+    box-shadow: 0 4px 16px 0 rgba(0,120,215,0.10);
+}
+
+.icon-link svg {
+    display: block;
+}
 
 footer {
     border-top: 1px solid var(--border);
