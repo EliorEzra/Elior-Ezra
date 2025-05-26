@@ -246,12 +246,32 @@ footer {
         gap: 0.5rem;
     }
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
     }
-    main {
-        padding: 1rem 0;
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0.5rem 0 0 0;
+    }
+    .profile-photo-large {
+        justify-content: center;
+        margin: 1.5rem 0 1rem 0;
+    }
+    .profile-photo-large img {
+        width: 180px;
+        height: 180px;
+    }
+    .container {
+        padding: 0 0.5rem;
     }
     section {
-        padding: 1.2rem 0.7rem;
+        padding: 1rem 0.5rem;
+    }
+    .connect-section {
+        padding: 1.2rem 0.5rem;
+    }
+    .connect-icons {
+        gap: 1.2rem;
     }
 }
