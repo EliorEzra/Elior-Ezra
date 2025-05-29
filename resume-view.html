@@ -21,16 +21,6 @@
             box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
             background: #fff;
         }
-        .back-link {
-            margin-top: 2rem;
-            text-decoration: none;
-            color: #0078d7;
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
         .honors-section {
             margin-top: 3rem;
             width: 100%;
@@ -70,6 +60,24 @@
             display: block;
             margin: 0 auto;
         }
+        .back-link {
+            display: inline-block;
+            margin: 2.5rem auto 2rem auto;
+            padding: 0.5em 1.2em;
+            background: #0078d7;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.06);
+            text-align: center;
+        }
+        .back-link:hover {
+            background: #005fa3;
+            text-decoration: none;
+        }
         @media (max-width: 700px) {
             .resume-pdf-container iframe,
             .honor-pdf iframe {
@@ -87,7 +95,6 @@
         <h1 style="text-align:center; color:#0078d7;">Resume</h1>
         <div class="resume-pdf-container">
             <iframe src="resume.pdf"></iframe>
-            <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
         </div>
         <section class="honors-section">
             <h2>Honors &amp; Awards</h2>
@@ -100,6 +107,9 @@
                 <iframe src="deans-list-2024.pdf"></iframe>
             </div>
         </section>
+        <div style="text-align:center;">
+            <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        </div>
     </main>
 </body>
 </html>
