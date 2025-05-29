@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elior Ezra - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .resume-pdf-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+        }
+        .resume-pdf-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 90vh;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+            background: #fff;
+        }
+        .back-link {
+            margin-top: 2rem;
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1 style="text-align:center; color:#0078d7;">Resume</h1>
+        <div class="resume-pdf-container">
+            <iframe src="resume.pdf"></iframe>
+            <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        </div>
+    </main>
+</body>
+</html>
