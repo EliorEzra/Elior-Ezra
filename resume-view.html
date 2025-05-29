@@ -12,7 +12,7 @@
             align-items: center;
             padding: 2rem 0;
         }
-        .resume-pdf-container iframe {
+        .resume-pdf-container embed {
             width: 100%;
             max-width: 800px;
             height: 90vh;
@@ -49,7 +49,7 @@
             margin-bottom: 0.5rem;
             text-align: center;
         }
-        .honor-pdf iframe {
+        .honor-pdf embed {
             width: 100%;
             max-width: 600px;
             height: 70vh;
@@ -79,8 +79,8 @@
             text-decoration: none;
         }
         @media (max-width: 700px) {
-            .resume-pdf-container iframe,
-            .honor-pdf iframe {
+            .resume-pdf-container embed,
+            .honor-pdf embed {
                 max-width: 100%;
                 height: 50vh;
             }
@@ -94,17 +94,17 @@
     <main class="container">
         <h1 style="text-align:center; color:#0078d7;">Resume</h1>
         <div class="resume-pdf-container">
-            <iframe src="resume.pdf"></iframe>
+            <embed src="resume.pdf" type="application/pdf">
         </div>
         <section class="honors-section">
             <h2>Honors &amp; Awards</h2>
             <div class="honor-pdf">
                 <div class="honor-title">Dean's List for 2023</div>
-                <iframe src="deans-list-2023.pdf"></iframe>
+                <embed src="deans-list-2023.pdf" type="application/pdf">
             </div>
             <div class="honor-pdf">
                 <div class="honor-title">Dean's List for 2024</div>
-                <iframe src="deans-list-2024.pdf"></iframe>
+                <embed src="deans-list-2024.pdf" type="application/pdf">
             </div>
         </section>
         <div style="text-align:center;">
