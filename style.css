@@ -16,10 +16,11 @@
 body {
     margin: 0;
     font-family: var(--font);
-    background: var(--bg);
+    background: #000; /* dark background for Matrix effect */
     color: var(--text);
     line-height: 1.7;
 }
+
 
 .container {
     max-width: 700px;
