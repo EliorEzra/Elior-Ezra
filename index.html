@@ -5,26 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elior Ezra - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Matrix animation background */
-        body, html {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-        #matrix-bg {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-            background: #000;
-        }
-    </style>
 </head>
 <body>
-    <canvas id="matrix-bg"></canvas>
     <header>
         <div class="container header-container">
             <h1>Elior Ezra</h1>
@@ -68,34 +50,38 @@
                     Utilized Makefile and unit testing to ensure code quality and efficiency.<br>
                     <a href="https://github.com/EliorEzra/Assembler-Project-C" target="_blank">GitHub Repo</a>
                 </li>
+
             </ul>
         </section>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <a class="resume-link" href="resume.pdf" download>Download Resume (PDF)</a>
-            <a class="resume-link" href="resume-view.html">View</a>
-            <div class="education">
-                <h3>Education</h3>
-                <strong>The Open University – B.Sc. in Computer Science</strong><br>
-                Graduation: 2026/2027<br>
-                Dean’s List – 2023, 2024<br>
-                GPA: 91
-                <ul>
-                    <li>Algorithms – 95</li>
-                    <li>Introduction to Computer Science – 95</li>
-                    <li>C Lab - Linux – 93</li>
-                    <li>Data Structures – 89</li>
-                </ul>
-            </div>
-            <div class="languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>Hebrew – Native</li>
-                    <li>English – Great</li>
-                </ul>
-            </div>
-        </section>
+<section id="resume">
+    <h2>Resume</h2>
+    <a class="resume-link" href="resume.pdf" download>Download Resume (PDF)</a>
+    <a class="resume-link" href="resume-view.html">View</a>
+        <div class="education">
+    <h3>Education</h3>
+        <ul class="education-list">
+            <li><strong>The Open University – B.Sc. in Computer Science</strong></li>
+            <li>Graduation: 2026/2027</li>
+            <li>Dean’s List – 2023, 2024</li>
+            <li>GPA: 91</li>
+        </ul>
+        <ul>
+            <li>Algorithms – 95</li>
+            <li>Introduction to Computer Science – 95</li>
+            <li>C Lab - Linux – 93</li>
+            <li>Data Structures – 89</li>
+        </ul>
+    </div>
+    <div class="languages">
+        <h3>Languages</h3>
+        <ul>
+            <li>Hebrew – Native</li>
+            <li>English – Great</li>
+        </ul>
+    </div>
+</section>
+
 
         <section id="connect" class="connect-section">
             <h2>Connect with Me</h2>
@@ -118,45 +104,5 @@
             &copy; 2025 Elior Ezra
         </div>
     </footer>
-    <script>
-        // Matrix animation
-        const canvas = document.getElementById('matrix-bg');
-        const ctx = canvas.getContext('2d');
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
-
-        const letters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッンאבגדהוזחטיכלמנסעפצקרשת0123456789';
-        const fontSize = 18;
-        const columns = Math.floor(width / fontSize);
-        const drops = Array(columns).fill(1);
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
-            ctx.fillRect(0, 0, width, height);
-
-            ctx.font = fontSize + "px monospace";
-            ctx.fillStyle = "#00FF41";
-            for (let i = 0; i < drops.length; i++) {
-                const text = letters.charAt(Math.floor(Math.random() * letters.length));
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 40);
-
-        window.addEventListener('resize', () => {
-            width = window.innerWidth;
-            height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-        });
-    </script>
 </body>
 </html>
