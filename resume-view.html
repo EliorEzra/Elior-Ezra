@@ -31,6 +31,55 @@
         .back-link:hover {
             text-decoration: underline;
         }
+        .honors-section {
+            margin-top: 3rem;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.06);
+            padding: 2rem 1rem;
+        }
+        .honors-section h2 {
+            color: #0078d7;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .honor-pdf {
+            margin-bottom: 2.5rem;
+        }
+        .honor-pdf:last-child {
+            margin-bottom: 0;
+        }
+        .honor-title {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .honor-pdf iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 70vh;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+            background: #fff;
+            display: block;
+            margin: 0 auto;
+        }
+        @media (max-width: 700px) {
+            .resume-pdf-container iframe,
+            .honor-pdf iframe {
+                max-width: 100%;
+                height: 50vh;
+            }
+            .honors-section {
+                padding: 1rem 0.2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -40,6 +89,17 @@
             <iframe src="resume.pdf"></iframe>
             <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
         </div>
+        <section class="honors-section">
+            <h2>Honors &amp; Awards</h2>
+            <div class="honor-pdf">
+                <div class="honor-title">Dean's List for 2023</div>
+                <iframe src="deans-list-2023.pdf"></iframe>
+            </div>
+            <div class="honor-pdf">
+                <div class="honor-title">Dean's List for 2024</div>
+                <iframe src="deans-list-2024.pdf"></iframe>
+            </div>
+        </section>
     </main>
 </body>
 </html>
